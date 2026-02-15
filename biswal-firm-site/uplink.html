@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uplink | Biswal & Co.</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,700;1,400&family=Roboto+Mono&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        stone: { 50: '#FAFAF9', 100: '#F5F5F4', 200: '#E7E5E4', 500: '#78716C', 900: '#1C1917' },
+                        biswalRed: '#DC2626',
+                    },
+                    fontFamily: {
+                        serif: ['"Playfair Display"', 'serif'],
+                        sans: ['Inter', 'sans-serif'],
+                        mono: ['"Roboto Mono"', 'monospace'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .bg-grid { background-size: 40px 40px; background-image: linear-gradient(to right, rgba(231, 229, 228, 0.4) 1px, transparent 1px), linear-gradient(to bottom, rgba(231, 229, 228, 0.4) 1px, transparent 1px); }
+        input, select, textarea { 
+            background: transparent !important; 
+            border: 1px solid #E7E5E4 !important; 
+            border-radius: 0px !important;
+            padding: 1rem !important;
+            width: 100%;
+            font-family: 'Inter', sans-serif;
+            font-size: 0.875rem;
+        }
+        input:focus, select:focus, textarea:focus { 
+            border-color: #1C1917 !important; 
+            outline: none;
+        }
+    </style>
+</head>
+<body class="bg-stone-50 text-stone-900 bg-grid min-h-screen">
+
+    <nav class="border-b border-stone-200 bg-stone-50/90 backdrop-blur fixed w-full top-0 z-50">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex justify-between items-center">
+            <a href="index.html" class="flex flex-col leading-none">
+                <div class="font-serif text-3xl tracking-tight font-bold">BISWAL & Co<span class="text-biswalRed">.</span></div>
+                <span class="text-[9px] font-sans tracking-[0.3em] font-bold text-stone-400 uppercase mt-1">CONSULTING SERVICES</span>
+            </a>
+            <div class="hidden md:flex space-x-10 font-mono text-[10px] tracking-widest uppercase font-bold text-stone-500">
+                <a href="index.html" class="hover:text-stone-900 transition-all">Home</a>
+                <a href="aegis.html" class="hover:text-stone-900 transition-all">The Lab</a>
+                <a href="uplink.html" class="text-stone-900 underline decoration-biswalRed underline-offset-4">Initialize Call</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-7xl mx-auto px-6 pt-48 pb-32">
+        <div class="mb-20">
+            <span class="font-mono text-[10px] text-biswalRed uppercase tracking-[0.4em] font-bold">Inquiry Phase: 01</span>
+            <h1 class="font-serif text-5xl md:text-7xl font-bold mt-6">Initialize Consultation<span class="text-biswalRed">.</span></h1>
+            <p class="mt-6 text-stone-500 font-sans text-lg max-w-2xl">
+                Please provide detailed technical context. We use this diagnostic data to identify systemic gaps before our scheduled session.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-16">
+            
+            <section class="lg:col-span-5">
+                <form action="https://api.web3forms.com/submit" method="POST" class="space-y-8">
+                    <input type="hidden" name="access_key" value="da99d55a-2ec4-4bcb-b0ca-8ca49fc1e706">
+                    <input type="hidden" name="subject" value="New Strategic Inquiry: Biswal & Co.">
+
+                    <div>
+                        <label class="font-mono text-[10px] uppercase tracking-widest text-stone-400 block mb-2">Corporate Identity</label>
+                        <input type="text" name="name" placeholder="FULL NAME" required>
+                        <input type="email" name="email" placeholder="OFFICIAL EMAIL" class="mt-4" required>
+                    </div>
+
+                    <div class="space-y-6">
+                        <div>
+                            <label class="font-mono text-[10px] uppercase tracking-widest text-stone-400 block mb-2">01 // Current System Stack</label>
+                            <input type="text" name="current_stack" placeholder="LIST YOUR CORE TOOLS (CRM, ERP, ETC)" required>
+                        </div>
+            
+                        <div>
+                            <label class="font-mono text-[10px] uppercase tracking-widest text-stone-400 block mb-2">02 // Primary Friction Point</label>
+                            <select name="bottleneck" required>
+                                <option value="" disabled selected>SELECT CORE BOTTLENECK</option>
+                                <option value="data_silos">Data Silos (Systems don't talk)</option>
+                                <option value="manual_labor">Excessive Manual Data Entry</option>
+                                <option value="scaling_friction">Process Breaks at Scale</option>
+                                <option value="visibility_loss">Lack of Executive Visibility</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label class="font-mono text-[10px] uppercase tracking-widest text-stone-400 block mb-2">03 // Estimated Monthly Impact</label>
+                            <input type="text" name="impact_cost" placeholder="ESTIMATED HOURS OR REVENUE LOST PER MONTH" required>
+                        </div>
+
+                        <div>
+                            <label class="font-mono text-[10px] uppercase tracking-widest text-stone-400 block mb-2">04 // Previous Attempts</label>
+                            <textarea name="history" rows="2" placeholder="WHAT HAVE YOU TRIED THAT FAILED?" required></textarea>
+                        </div>
+            
+                        <div>
+                            <label class="font-mono text-[10px] uppercase tracking-widest text-stone-400 block mb-2">05 // The North Star Metric</label>
+                            <textarea name="goal" rows="2" placeholder="DEFINE THE ONE METRIC THAT DETERMINES SUCCESS." required></textarea>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="w-full bg-stone-900 text-white py-5 font-mono text-xs uppercase tracking-[0.3em] font-bold hover:bg-biswalRed transition-all">
+                        Submit Audit Data _
+                    </button>
+                </form>
+            </section>
+
+            <section class="lg:col-span-7 border-t lg:border-t-0 lg:border-l border-stone-200 lg:pl-16 pt-12 lg:pt-0">
+                <div class="bg-white p-8 border border-stone-200">
+                    <h3 class="font-serif text-2xl font-bold mb-4">Direct Scheduling</h3>
+                    <p class="text-stone-500 text-sm mb-8">Select a window for our initial technical audit.</p>
+                    <div class="w-full h-[800px] bg-stone-50 border border-stone-100 relative">
+                        <iframe 
+                            src="https://cal.com/swayam-swarup-biswal-zhyqvk/initialize-consultation?theme=light&layout=month_view" 
+                            class="w-full h-full border-none" 
+                            frameborder="0"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="border-t border-stone-200 bg-white py-12 text-center text-stone-400 font-mono text-[10px] uppercase tracking-widest">
+        Biswal & Co. // Uplink Active // Ref_ID: 2026_IN_01
+    </footer>
+
+</body>
+</html>

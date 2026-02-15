@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Protocol | Biswal & Co.</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,700;1,400&family=Roboto+Mono&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        stone: { 50: '#FAFAF9', 100: '#F5F5F4', 200: '#E7E5E4', 500: '#78716C', 900: '#1C1917' },
+                        biswalRed: '#DC2626',
+                    },
+                    fontFamily: {
+                        serif: ['"Playfair Display"', 'serif'],
+                        sans: ['Inter', 'sans-serif'],
+                        mono: ['"Roboto Mono"', 'monospace'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .bg-grid { background-size: 40px 40px; background-image: linear-gradient(to right, rgba(231, 229, 228, 0.4) 1px, transparent 1px), linear-gradient(to bottom, rgba(231, 229, 228, 0.4) 1px, transparent 1px); }
+    </style>
+</head>
+<body class="bg-stone-50 text-stone-900 bg-grid min-h-screen">
+
+    <nav class="border-b border-stone-200 bg-stone-50/90 backdrop-blur fixed w-full top-0 z-50">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex justify-between items-center">
+            <a href="index.html" class="flex flex-col leading-none group">
+                <div class="font-serif text-3xl tracking-tight font-bold group-hover:opacity-80 transition-opacity">BISWAL & Co<span class="text-biswalRed">.</span></div>
+                <span class="text-[9px] font-sans tracking-[0.3em] font-bold text-stone-400 uppercase mt-1">CONSULTING SERVICES</span>
+            </a>
+            <div class="hidden md:flex space-x-10 font-mono text-[10px] tracking-widest uppercase font-bold text-stone-500">
+                <a href="services.html" class="text-stone-900 underline decoration-biswalRed underline-offset-4">The Protocol</a>
+                <a href="aegis.html" class="hover:text-stone-900 hover:underline decoration-biswalRed underline-offset-4 transition-all">The Lab</a>
+                <a href="contact.html" class="bg-stone-900 text-white px-5 py-2 hover:bg-biswalRed transition-all no-underline">Initialize Call</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="pt-48 pb-20 px-6 max-w-7xl mx-auto border-b border-stone-200">
+        <span class="font-mono text-[10px] text-biswalRed uppercase tracking-[0.4em] font-bold">Operating Procedures</span>
+        <h1 class="font-serif text-5xl md:text-7xl font-bold mt-6 mb-8">The Four-Phase <br>Engagement Protocol.</h1>
+        <p class="max-w-2xl font-sans text-stone-600 text-lg leading-relaxed">
+            Most consulting ends at a PDF presentation. Ours ends with deployed code and optimized workflows. We move strictly from Audit to Architecture to Integration.
+        </p>
+    </section>
+
+    <section class="max-w-7xl mx-auto px-6 py-24 space-y-24">
+        
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-12 items-start">
+            <div class="md:col-span-3 font-mono text-xs text-stone-400 uppercase tracking-widest sticky top-32">
+                Phase 01 // Intake
+            </div>
+            <div class="md:col-span-9 border-l border-biswalRed pl-8 md:pl-16">
+                <h2 class="font-serif text-3xl font-bold mb-4">Discovery & Audit</h2>
+                <p class="text-stone-600 leading-relaxed mb-6">
+                    We don't guess. We begin by ingesting your current operational data. We map your existing tech stack, team workflows, and revenue bottlenecks. This is a "No-Code" phase focused entirely on understanding the friction.
+                </p>
+                <ul class="space-y-2 font-mono text-xs text-stone-500 uppercase tracking-widest">
+                    <li>+ Stakeholder Interviews</li>
+                    <li>+ Tech Stack Review</li>
+                    <li>+ Friction Mapping</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-12 items-start">
+            <div class="md:col-span-3 font-mono text-xs text-stone-400 uppercase tracking-widest sticky top-32">
+                Phase 02 // Diagnosis
+            </div>
+            <div class="md:col-span-9 border-l border-stone-300 pl-8 md:pl-16">
+                <h2 class="font-serif text-3xl font-bold mb-4">Gap Analysis & Strategy</h2>
+                <p class="text-stone-600 leading-relaxed mb-6">
+                    We identify the "Silent Killers" of your efficiency. We present a strategic document outlining exactly where automation and AI can replace manual drudgery. This is the blueprint phase.
+                </p>
+                <ul class="space-y-2 font-mono text-xs text-stone-500 uppercase tracking-widest">
+                    <li>+ ROI Calculation</li>
+                    <li>+ Vulnerability Report</li>
+                    <li>+ Strategic Roadmap</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-12 items-start">
+            <div class="md:col-span-3 font-mono text-xs text-stone-400 uppercase tracking-widest sticky top-32">
+                Phase 03 // Execution
+            </div>
+            <div class="md:col-span-9 border-l border-stone-300 pl-8 md:pl-16">
+                <h2 class="font-serif text-3xl font-bold mb-4">Architecture & Deployment</h2>
+                <p class="text-stone-600 leading-relaxed mb-6">
+                    We build. Whether it's a custom dashboard, an automated email agent, or a full implementation of <strong>Aegis Obsidian</strong>, we deploy the necessary infrastructure. You receive full documentation and ownership.
+                </p>
+                <ul class="space-y-2 font-mono text-xs text-stone-500 uppercase tracking-widest">
+                    <li>+ Custom Development</li>
+                    <li>+ Aegis Integration</li>
+                    <li>+ Staff Training</li>
+                </ul>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="bg-stone-900 text-stone-50 py-24 text-center">
+        <h2 class="font-serif text-4xl font-bold mb-8">Ready to initiate Phase 01?</h2>
+        <a href="contact.html" class="inline-block bg-white text-stone-900 px-10 py-4 font-mono text-xs uppercase tracking-[0.2em] font-bold hover:bg-biswalRed hover:text-white transition-all">
+            Schedule Audit
+        </a>
+    </section>
+
+</body>
+</html>

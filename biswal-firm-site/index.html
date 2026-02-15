@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Biswal & Co. | Strategic Operations Consulting</title>
+    <meta name="description" content="Biswal & Co. architects high-efficiency operational systems and AI-powered project management solutions for scaling firms. Global operations strategy and Aegis system integration.">
+    <meta name="keywords" content="Operations Consulting, AI Project Management, Business Systems, Process Architecture, Aegis System, Biswal & Co">
+    <meta name="author" content="Swayam Swarup Biswal">
+    
+    <meta property="og:title" content="Biswal & Co. | Strategic Operations Consulting">
+    <meta property="og:description" content="We architect high-efficiency operational systems for firms that refuse to compromise on scale.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://biswal.co"> 
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,700;1,400&family=Roboto+Mono&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        stone: { 50: '#FAFAF9', 100: '#F5F5F4', 200: '#E7E5E4', 500: '#78716C', 900: '#1C1917' },
+                        biswalRed: '#DC2626',
+                    },
+                    fontFamily: { serif: ['"Playfair Display"', 'serif'], sans: ['Inter', 'sans-serif'], mono: ['"Roboto Mono"', 'monospace'] }
+                }
+            }
+        }
+    </script>
+    <style>
+        .bg-grid { background-size: 40px 40px; background-image: linear-gradient(to right, rgba(231, 229, 228, 0.4) 1px, transparent 1px), linear-gradient(to bottom, rgba(231, 229, 228, 0.4) 1px, transparent 1px); }
+        .flip-card { background-color: transparent; perspective: 1000px; height: 380px; }
+        .flip-card-inner { position: relative; width: 100%; height: 100%; text-align: left; transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1); transform-style: preserve-3d; }
+        .flip-card.is-flipped .flip-card-inner { transform: rotateY(180deg); }
+        .flip-card-front, .flip-card-back { position: absolute; width: 100%; height: 100%; -webkit-backface-visibility: hidden; backface-visibility: hidden; border: 1px solid #E7E5E4; padding: 2rem; }
+        .flip-card-back { background-color: #1C1917; color: white; transform: rotateY(180deg); display: flex; flex-direction: column; }
+        .card-scroll::-webkit-scrollbar { width: 3px; }
+        .card-scroll::-webkit-scrollbar-track { background: #1C1917; }
+        .card-scroll::-webkit-scrollbar-thumb { background: #DC2626; }
+    </style>
+</head>
+<body class="bg-stone-50 text-stone-900 bg-grid font-sans selection:bg-biswalRed selection:text-white flex flex-col min-h-screen">
+
+    <nav class="border-b border-stone-200 bg-stone-50/90 backdrop-blur fixed w-full top-0 z-50">
+        <div class="max-w-7xl mx-auto px-6 h-24 flex justify-between items-center">
+            <a href="index.html" class="flex flex-col leading-none">
+                <div class="font-serif text-3xl tracking-tight font-bold">BISWAL & Co<span class="text-biswalRed">.</span></div>
+                <span class="text-[10px] font-sans tracking-[0.3em] font-bold text-stone-400 uppercase mt-2">CONSULTING SERVICES</span>
+            </a>
+            <div class="hidden md:flex space-x-12 font-mono text-xs tracking-widest uppercase font-bold text-stone-500">
+                <a href="index.html" class="hover:text-stone-900 transition-all text-biswalRed">Home</a>
+                <a href="aegis.html" class="hover:text-stone-900 transition-all">The Lab</a>
+                <a href="uplink.html" class="hover:text-stone-900 transition-all border-b border-transparent hover:border-biswalRed pb-1">Initialize Call</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="pt-48 pb-20 px-6 max-w-7xl mx-auto w-full">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <div>
+                <span class="font-mono text-xs text-biswalRed uppercase tracking-widest">Global Operations Strategy</span>
+                <h1 class="font-serif text-6xl md:text-8xl font-bold mt-6 leading-[0.9]">Systemic <br> <span class="italic text-stone-400">Precision.</span></h1>
+                <p class="mt-8 text-xl text-stone-600 max-w-md border-l-2 border-biswalRed pl-6">We architect high-efficiency operational systems for firms that refuse to compromise on scale.</p>
+                <div class="mt-12 flex items-center space-x-6">
+                    <a href="uplink.html" class="bg-stone-900 text-white px-8 py-4 font-mono text-xs uppercase tracking-widest hover:bg-biswalRed transition-colors">Initiate Protocol</a>
+                </div>
+            </div>
+            <div class="flex flex-col items-center lg:items-end justify-center">
+                <div class="relative w-full max-w-xs group cursor-pointer">
+                    <div class="absolute -inset-2 border border-stone-200 z-0"></div>
+                    <img src="assets/aegis-home.png" alt="Aegis Interface" class="relative z-10 w-full shadow-2xl grayscale group-hover:grayscale-0 transition-all duration-500 border border-stone-900">
+                </div>
+                <a href="https://script.google.com/macros/s/AKfycbyXd_vSd-ns3XuruOBhACUE7LrSQc0rrQGfwytRF5JNMSsZpXhd5oXKQcmNUnV6ThBi/exec" target="_blank" class="mt-8 bg-white border border-stone-200 px-8 py-4 shadow-lg hover:border-biswalRed hover:text-biswalRed transition-all group">
+                    <span class="font-mono text-xs uppercase tracking-[0.2em] font-bold">Launch Aegis Live →</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section class="border-t border-stone-200 bg-white py-24 w-full">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex justify-between items-end mb-16">
+                <h2 class="font-serif text-4xl font-bold">The Methodology</h2>
+                <span class="hidden md:block font-mono text-[10px] text-stone-400 uppercase tracking-widest">Click cards for deep architectural detail</span>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                
+                <div class="flip-card" onclick="this.classList.toggle('is-flipped')">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front bg-white flex flex-col justify-between">
+                            <div><span class="font-mono text-[10px] text-biswalRed uppercase tracking-widest mb-4 block">01 // Discovery</span><h3 class="font-serif text-2xl font-bold">Audit & Diagnostic</h3></div>
+                            <span class="font-mono text-[10px] text-stone-400 uppercase tracking-widest">Expand Protocol +</span>
+                        </div>
+                        <div class="flip-card-back card-scroll overflow-y-auto pr-4">
+                            <h4 class="font-mono text-xs text-biswalRed uppercase tracking-widest mb-4">Phase 01: Analysis</h4>
+                            <p class="text-[13px] leading-relaxed mb-6">Mapping systemic leaks and stakeholder misalignment.</p>
+                            <div class="space-y-4">
+                                <div><h5 class="text-[11px] text-white font-bold uppercase tracking-widest mb-1">BPMN 2.0 Mapping</h5><p class="text-[10px] text-stone-400 leading-normal">Full visualization of current 'As-Is' processes.</p></div>
+                                <div><h5 class="text-[11px] text-white font-bold uppercase tracking-widest mb-1">Data Silo Audit</h5><p class="text-[10px] text-stone-400 leading-normal">Tracing info flow across software ecosystems.</p></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flip-card" onclick="this.classList.toggle('is-flipped')">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front bg-white flex flex-col justify-between">
+                            <div><span class="font-mono text-[10px] text-biswalRed uppercase tracking-widest mb-4 block">02 // Analysis</span><h3 class="font-serif text-2xl font-bold">Gap Analysis</h3></div>
+                            <span class="font-mono text-[10px] text-stone-400 uppercase tracking-widest">Expand Protocol +</span>
+                        </div>
+                        <div class="flip-card-back card-scroll overflow-y-auto pr-4">
+                            <h4 class="font-mono text-xs text-biswalRed uppercase tracking-widest mb-4">Phase 02: Diagnosis</h4>
+                            <p class="text-[13px] leading-relaxed mb-6">Transitioning from observation to quantitative friction assessment.</p>
+                            <div class="space-y-4">
+                                <div><h5 class="text-[11px] text-white font-bold uppercase tracking-widest mb-1">Theory of Constraints</h5><p class="text-[10px] text-stone-400 leading-normal">Applying Goldratt's logic to bottlenecks.</p></div>
+                                <div><h5 class="text-[11px] text-white font-bold uppercase tracking-widest mb-1">Root Cause Analysis</h5><p class="text-[10px] text-stone-400 leading-normal">Using Ishikawa and 5-Whys on systemic failure.</p></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flip-card" onclick="this.classList.toggle('is-flipped')">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front bg-white flex flex-col justify-between">
+                            <div><span class="font-mono text-[10px] text-biswalRed uppercase tracking-widest mb-4 block">03 // Architecture</span><h3 class="font-serif text-2xl font-bold">Strategic Blueprint</h3></div>
+                            <span class="font-mono text-[10px] text-stone-400 uppercase tracking-widest">Expand Protocol +</span>
+                        </div>
+                        <div class="flip-card-back card-scroll overflow-y-auto pr-4">
+                            <h4 class="font-mono text-xs text-biswalRed uppercase tracking-widest mb-4">Phase 03: Solution</h4>
+                            <p class="text-[13px] leading-relaxed mb-6">Designing high-fidelity 'To-Be' states with AI integration.</p>
+                            <div class="space-y-4">
+                                <div><h5 class="text-[11px] text-white font-bold uppercase tracking-widest mb-1">Tech Stack Selection</h5><p class="text-[10px] text-stone-400 leading-normal">Curating specific tools to eliminate friction.</p></div>
+                                <div><h5 class="text-[11px] text-white font-bold uppercase tracking-widest mb-1">ROI Forecasting</h5><p class="text-[10px] text-stone-400 leading-normal">Predicting tangible cost-savings post-deployment.</p></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flip-card" onclick="this.classList.toggle('is-flipped')">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front bg-white flex flex-col justify-between">
+                            <div><span class="font-mono text-[10px] text-biswalRed uppercase tracking-widest mb-4 block">04 // Execution</span><h3 class="font-serif text-2xl font-bold">System Deployment</h3></div>
+                            <span class="font-mono text-[10px] text-stone-400 uppercase tracking-widest">Expand Protocol +</span>
+                        </div>
+                        <div class="flip-card-back card-scroll overflow-y-auto pr-4">
+                            <h4 class="font-mono text-xs text-biswalRed uppercase tracking-widest mb-4">Phase 04: Integration</h4>
+                            <p class="text-[13px] leading-relaxed mb-6">Ensuring sustainability through implementation cycles.</p>
+                            <div class="space-y-4">
+                                <div><h5 class="text-[11px] text-white font-bold uppercase tracking-widest mb-1">Agile Sprints</h5><p class="text-[10px] text-stone-400 leading-normal">Phased rollouts to minimize operational downtime.</p></div>
+                                <div><h5 class="text-[11px] text-white font-bold uppercase tracking-widest mb-1">Sustainability Loop</h5><p class="text-[10px] text-stone-400 leading-normal">Training sessions for team self-sufficiency.</p></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-stone-900 text-stone-400 py-20 border-t border-stone-800 mt-auto">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-12 text-xs font-mono uppercase tracking-widest">
+            <div class="col-span-2"><span class="text-white font-serif text-2xl font-bold">BISWAL & Co.</span><p class="mt-4 max-w-xs leading-relaxed">Systemic excellence in the digital age.</p></div>
+            <div><h4 class="text-white mb-6">Sitemap</h4><ul class="space-y-4"><li><a href="index.html" class="hover:text-white">Home</a></li><li><a href="aegis.html" class="hover:text-white">The Lab</a></li><li><a href="uplink.html" class="hover:text-white">Uplink</a></li></ul></div>
+            <div><h4 class="text-white mb-6">Contact</h4><ul class="space-y-4"><li><a href="mailto:swayam@biswal.co" class="hover:text-white">Email_Us</a></li><li>India // Global</li></ul></div>
+        </div>
+    </footer>
+</body>
+</html>
